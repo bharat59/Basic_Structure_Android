@@ -1,6 +1,7 @@
 package com.example.basicstructure.di
 
 import android.content.Context
+import com.example.basicstructure.util.PreferenceProvider
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

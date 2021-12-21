@@ -2,6 +2,7 @@ package com.example.basicstructure.ui.base
 
 import android.content.Context
 import androidx.fragment.app.Fragment
+import com.example.basicstructure.util.PreferenceProvider
 import com.example.basicstructure.util.hideKeyboard
 
 /**

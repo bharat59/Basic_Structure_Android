@@ -1,6 +1,7 @@
 package com.example.basicstructure.di
 
 
+import com.example.basicstructure.BuildConfig
 import com.example.basicstructure.data.source.network.ApiService
 import com.example.basicstructure.util.Constants
 import dagger.Module
@@ -78,14 +79,6 @@ class NetworkModule {
         return Interceptor { chain: Interceptor.Chain ->
             val request: Request.Builder = chain.request()
                 .newBuilder()
-                .header(
-                    "buildNumber",
-                    BuildConfig.VERSION_CODE.toString() + ""
-                )
-                .header(
-                    "Authorization",
-                    Constants.AUTHORISATION_TOKEN
-                )
             chain.proceed(request.build())
         }
     }
